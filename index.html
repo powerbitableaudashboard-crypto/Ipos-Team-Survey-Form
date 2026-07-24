@@ -569,6 +569,7 @@ function submitForm() {
   var trainerEmail = document.getElementById('trainer-email').value.trim();
   var county       = document.getElementById('county').value;
   var shopName     = document.getElementById('shop-name').value.trim();
+  var shopId       = document.getElementById('shop-id').value.trim(); // ← ADD THIS LINE
   var ownerName    = document.getElementById('owner-name').value.trim();
   var shopLocation = document.getElementById('shop-location').value.trim();
   var ownerPhone      = document.getElementById('owner-phone').value.trim();
@@ -579,6 +580,7 @@ function submitForm() {
   if (!trainerEmail) missing.push('Trainer\'s email');
   if (!county)       missing.push('County');
   if (!shopName)     missing.push('Shop name');
+ if (!shopId)       missing.push('Shop ID'); // ← ADD THIS
   if (!ownerName)    missing.push('Owner name');
   if (!shopLocation) missing.push('Shop location');
   if (!ownerPhone)        missing.push('Shop owner number');
