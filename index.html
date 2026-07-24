@@ -394,6 +394,10 @@
         <label for="shop-name">Shop name<span class="req">*</span></label>
         <input type="text" id="shop-name" placeholder="e.g. Kamau General Store" oninput="updateProgress()">
       </div>
+     <div class="field">
+        <label for="shop-id">Shop ID<span class="req">*</span></label>
+        <input type="number" id="shop-id" placeholder="e.g. 1234567890" min="0" maxlength="10" oninput="updateProgress(); this.value = this.value.slice(0, 10)" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      </div>
       <div class="field">
         <label for="owner-name">Owner name<span class="req">*</span></label>
         <input type="text" id="owner-name" placeholder="e.g. John Kamau" oninput="updateProgress()">
